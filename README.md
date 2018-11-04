@@ -10,14 +10,9 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Runs Back-end (Do it in another terminal)
 ```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
+npm start
 ```
 
 ### Lints and fixes files
