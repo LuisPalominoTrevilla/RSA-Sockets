@@ -1,4 +1,4 @@
-module.exports = class RSA {
+export default class RSA {
 
     constructor() {
         const primes = this.erathostenes(10000);
@@ -19,6 +19,7 @@ module.exports = class RSA {
         }
 
         let k = 0;
+        // eslint-disable-next-line
         while(true) {
             let z = (k*this.phiN)+1;
             if (z%this.e) {
@@ -46,7 +47,7 @@ module.exports = class RSA {
     }
     
     phi(m) {
-        res = 0;
+        let res = 0;
         for (let i = 0; i < m; i++) {
             if (this.MCD(i, m) === 1) res++;
         }
